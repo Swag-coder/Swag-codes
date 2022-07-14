@@ -60,6 +60,3 @@ else:
     rem=days%-7
 week=["Friday","Saturday","Sunday","Monday","Tuesday","Wednesday","Thursday"]
 print(week[rem])
-
-
-
