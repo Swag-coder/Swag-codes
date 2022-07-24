@@ -36,6 +36,3 @@ while seq != [1] + [n] * (n - 1):
             else:
                 seq[i] += 1
                 inc = 'no'
-
-    
-    
