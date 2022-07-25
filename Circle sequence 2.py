@@ -2,14 +2,14 @@ import math
 
 def nxt_permut(seq):
     swap_ind = seq.index(max(seq))
-    swap = 'no'
+    swap = False
     for i in range(-2, -len(seq) - 1, -1):
         for j in range(i + 1, 0):
             if seq[j] > seq[i]:
-                swap = 'yes'
+                swap = True
                 if seq[swap_ind] > seq[j]:
                     swap_ind = j
-        if swap == 'yes':
+        if swap:
             temp = seq[i]
             seq[i] = seq[swap_ind]
             seq[swap_ind] = temp
@@ -30,4 +30,4 @@ while seq != [1] + list(range(n, 1, -1)):
     else:
         print(*seq)
         
-    seq = [1] + nxt_permut(seq[1:])
+    seq = nxt_permut(seq)
