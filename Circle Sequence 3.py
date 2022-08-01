@@ -35,7 +35,7 @@ while len(lst) != 0 and len(lst) != n:
 t = time.monotonic() - start
 if len(lst) == n:
     print("No circle exists for the number", n)
- else:
+else:
     print(*seq)
 print("Time taken: {}s".format(t))
         
