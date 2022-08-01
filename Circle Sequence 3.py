@@ -32,13 +32,12 @@ while len(lst) != 0 and len(lst) != n:
         lst.sort()
         ind = lst.index(seq[-1]) + 1
         del seq[-1]
-else:
-    t = time.monotonic() - start
-    if len(lst) == n:
-        print("No circle exists for the number", n)
-    else:
-        print(*seq)
-    print("Time taken: {}s".format(t))
+t = time.monotonic() - start
+if len(lst) == n:
+    print("No circle exists for the number", n)
+ else:
+    print(*seq)
+print("Time taken: {}s".format(t))
         
             
            
