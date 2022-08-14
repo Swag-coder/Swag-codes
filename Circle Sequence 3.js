@@ -1,5 +1,5 @@
 const sqr = [];
-let int = 32;
+const n = 32;
 for (let i = 2; i < Math.sqrt(n * 2); i++) {
     sqr.push(i * i);
 }
